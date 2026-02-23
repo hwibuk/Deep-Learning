@@ -53,7 +53,7 @@ def residual_block(x, filters, stride=1):
     x = layers.Activation('relu')(x)
     return x
 
-# 3. 모델 빌드 (채널 수 최적화: 64-128-256)
+# 3. 모델 빌드 (채널 수 최적화: 128-256-512)
 def build_resnet():
     inputs = layers.Input(shape=(32, 32, 3))
     
